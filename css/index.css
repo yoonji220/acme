@@ -23,5 +23,9 @@
   border: 1px solid var(--medium-blue);
   border-radius: 50%;
   box-sizing: border-box;
+  color: var(--medium-blue);
+}
+
+.features .icon span {
   font-size: 36px;
 }
