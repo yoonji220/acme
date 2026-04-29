@@ -36,7 +36,7 @@ body {
   /* font-family: "Open Sans", sans-serif;
   font-size: var(--base-font);
   line-height: var(--base-unit); */
-  font:var(--base-font)/var(--base-unit) "Open Sans", sans-serif;
+  font: var(--base-font)/var(--base-unit) "Open Sans", sans-serif;
 }
 
 /* 폰트 위계 */
@@ -169,6 +169,13 @@ form button {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+hr {
+  border: none;
+  /* border-top: 1px solid var(--super--light--gray); */
+  height: 1px;
+  background: var(--super--light--gray);
 }
 
 /* header */
