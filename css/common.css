@@ -176,6 +176,10 @@ form button {
   overflow: hidden;
 }
 
+section .header {
+  margin-bottom: calc(var(--base-unit) * 2);
+}
+
 hr {
   border: none;
   /* border-top: 1px solid var(--super--light--gray); */
@@ -228,6 +232,11 @@ header nav ul li:first-child {
   flex-direction: column;
   align-items: center;
   gap: var(--base-unit);
+}
+
+.slidecontainer li > p {
+  width: 700px;
+  text-align: center;
 }
 
 /* .slidewrapper button {
