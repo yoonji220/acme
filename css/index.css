@@ -29,3 +29,33 @@
 .features .icon span {
   font-size: 36px;
 }
+/* .testimonial li {
+  font-weight: 300;
+
+}
+
+.testimonial blockquote {
+  width: 840px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--light-blue);
+  text-align: center;
+}
+ */
+.testimonial li {
+  font-weight: 300;
+  color: var(--light-blue);
+  text-align: center;
+}
+.testimonial blockquote {
+  width: 840px;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 36px;
+}
+.testimonial small {
+  font-weight: 300;
+  text-transform: uppercase;
+}

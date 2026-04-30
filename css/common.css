@@ -1,6 +1,6 @@
-@import url('normalize.css');
-@import url('reset.css');
-@import url('flex-utility.css');
+@import url("normalize.css");
+@import url("reset.css");
+@import url("flex-utility.css");
 
 :root {
   /* Layout */
@@ -36,7 +36,9 @@ body {
   /* font-family: "Open Sans", sans-serif;
   font-size: var(--base-font);
   line-height: var(--base-unit); */
-  font: var(--base-font)/var(--base-unit) "Open Sans", sans-serif;
+  font:
+    var(--base-font)/var(--base-unit) "Open Sans",
+    sans-serif;
 }
 
 /* 폰트 위계 */
@@ -179,10 +181,10 @@ hr {
 }
 
 /* header */
-body>header {
+body > header {
   background: var(--white);
   padding: var(--base-unit) 0;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, .1);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* h1 span {
@@ -197,4 +199,56 @@ header nav ul {
 
 header nav ul li:first-child {
   margin-right: 40px;
+}
+
+/* 슬라이드 */
+.slidewrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slidecontainer {
+  width: 300%; /* js 부모 너비 파악, 슬라이드 개수 파악, 너비 계산 지정할 예정 */
+  display: flex;
+  transition: 0.3s ease-out;
+  /* transform:translateX(-1272px); */
+}
+
+.slidecontainer li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--base-unit);
+}
+
+/* .slidewrapper button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light--gray);
+  cursor: pointer;
+} */
+
+.slidewrapper button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light--gray);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slidewrapper .prev {
+  left: 0;
+}
+
+.slidewrapper .next {
+  right: 0;
 }
