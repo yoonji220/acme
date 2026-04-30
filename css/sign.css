@@ -1,0 +1,64 @@
+.hero form {
+  position: relative;
+}
+/* .field {
+  position: relative;
+} */
+
+.feedback {
+  width: 300px;
+  padding: 20px;
+  color: #f30000;
+  border-radius: 3px;
+  background: var(--white);
+  position: absolute;
+  left: calc(100% + 30px);
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--base-unit);
+}
+.box {
+  width: 0;
+  height: 0;
+  border-width: 5px 10px;
+  border-style: solid;
+  margin: 1rem auto;
+}
+
+.box1 {
+  /* border: 10px solid red; */
+  border-color: red;
+}
+
+.box2 {
+  border-width: 10px;
+  border-color: red blue;
+}
+
+.box3 {
+  border-color: transparent red transparent transparent;
+}
+
+/* .feedback::after {
+  position: absolute;
+  content:'';
+  top: 20%;
+  left:-20px;
+  transform: translateY(-50%);
+
+  border-width: 5px 10px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+} */
+.feedback::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 7px 8px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+  top: 30px;
+  right: 100%;
+}
