@@ -211,7 +211,7 @@ header nav ul li:first-child {
   width: 300%; /* js 부모 너비 파악, 슬라이드 개수 파악, 너비 계산 지정할 예정 */
   display: flex;
   transition: 0.3s ease-out;
-  /* transform:translateX(-1272px); */
+  transform: translateX(-1272px);
 }
 
 .slidecontainer li {
